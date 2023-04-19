@@ -40,6 +40,7 @@
                 android:text="Username"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
+                android:padding="5dp"
                 android:textSize="20sp"
                 android:textStyle="bold|italic"
                 android:textColor="@color/black"
