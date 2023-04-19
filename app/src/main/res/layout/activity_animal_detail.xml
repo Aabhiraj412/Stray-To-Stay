@@ -99,7 +99,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="I found this dog on near by street but couldn't afford to adopt it. Hope sone one else will be intrested."
+                        android:text="I found this dog on near by street but couldn't afford to adopt it. Hope some one else will be intrested."
                         android:textSize="20sp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
