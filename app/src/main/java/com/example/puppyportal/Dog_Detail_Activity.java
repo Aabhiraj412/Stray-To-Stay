@@ -18,12 +18,22 @@ public class Dog_Detail_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animal_detail);
 
+        Button adopt_button = findViewById(R.id.adopt_btn);
+
         btn = findViewById(R.id.loc_btn);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Dog_Detail_Activity.this, "Location", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        adopt_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Dog_Detail_Activity.this, "Congratulations", Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -11,7 +11,7 @@
         android:title="Zwobook" />
     <item
         android:id="@+id/add"
-        android:title="Add"
+        android:title="Upload"
         android:icon="@drawable/add" />
     <item
         android:id="@+id/notification"

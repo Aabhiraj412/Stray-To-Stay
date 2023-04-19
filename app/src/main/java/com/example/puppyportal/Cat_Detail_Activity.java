@@ -17,10 +17,20 @@ public class Cat_Detail_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_cat_detail);
         Button btn = findViewById(R.id.loc_btn);
 
+        Button adopt_button = findViewById(R.id.adopt_btn);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Cat_Detail_Activity.this, "Location", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        adopt_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Cat_Detail_Activity.this, "Congratulations", Toast.LENGTH_SHORT).show();
             }
         });
     }

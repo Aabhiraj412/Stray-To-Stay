@@ -23,7 +23,7 @@ public class Add_Fragment extends Fragment {
         // Required empty public constructor
     }
 
-    Button camera, open_gallery,submit, location;
+    Button camera, open_gallery,submit, location, emergency;
     ImageView upload_image;
     private final int GALLERY_REQ_CODE = 1000;
     private final int CAMERA_REQ_CODE = 100;
@@ -40,6 +40,15 @@ public class Add_Fragment extends Fragment {
         submit = view.findViewById(R.id.submit);
         location = view.findViewById(R.id.location_btn);
         upload_image = view.findViewById(R.id.upload_image);
+        emergency = view.findViewById(R.id.emergency);
+
+        emergency.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Doctor_Activity.class);
+                startActivity(intent);
+            }
+        });
         
         location.setOnClickListener(new View.OnClickListener() {
             @Override
