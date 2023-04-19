@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -23,8 +24,10 @@ public class Add_Fragment extends Fragment {
         // Required empty public constructor
     }
 
-    Button camera, open_gallery,submit, location, emergency;
+    Button camera, open_gallery,submit, location_btn, emergency;
     ImageView upload_image;
+
+    EditText location, description;
     private final int GALLERY_REQ_CODE = 1000;
     private final int CAMERA_REQ_CODE = 100;
 
@@ -38,9 +41,12 @@ public class Add_Fragment extends Fragment {
         camera = view.findViewById(R.id.camera);
         open_gallery = view.findViewById(R.id.open_gallerery);
         submit = view.findViewById(R.id.submit);
-        location = view.findViewById(R.id.location_btn);
+        location_btn = view.findViewById(R.id.location_btn);
         upload_image = view.findViewById(R.id.upload_image);
         emergency = view.findViewById(R.id.emergency);
+
+        location = view.findViewById(R.id.location_fil);
+        description = view.findViewById(R.id.disc);
 
         emergency.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +88,18 @@ public class Add_Fragment extends Fragment {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Uploaded Successfully", Toast.LENGTH_SHORT).show();
+                String loc = location.getText().toString();
+                String disc = description.getText().toString();
+
+                if (loc.isEmpty()){
+                    location.setError("This field is required");
+                } else if (disc.isEmpty()) {
+                    description.setError("This Field is Required");
+                }else {
+                    Toast.makeText(getContext(), "Uploaded Successfully", Toast.LENGTH_SHORT).show();
+
+                }
+
             }
         });
 
