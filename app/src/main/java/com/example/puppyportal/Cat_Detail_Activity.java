@@ -3,6 +3,7 @@ package com.example.puppyportal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,18 +20,18 @@ public class Cat_Detail_Activity extends AppCompatActivity {
 
         Button adopt_button = findViewById(R.id.adopt_btn);
 
+        adopt_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                adopt_button.setBackgroundColor(Color.BLUE);
+                Toast.makeText(Cat_Detail_Activity.this, "Congratulations" , Toast.LENGTH_SHORT).show();
+            }
+        });
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Cat_Detail_Activity.this, "Location", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-
-        adopt_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(Cat_Detail_Activity.this, "Congratulations", Toast.LENGTH_SHORT).show();
             }
         });
     }

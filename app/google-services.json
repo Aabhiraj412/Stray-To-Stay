@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314292970167",
+    "project_id": "stray-to-stay",
+    "storage_bucket": "stray-to-stay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314292970167:android:467c3d0f53421edab66332",
+        "android_client_info": {
+          "package_name": "com.example.puppyportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314292970167-il9r0ioke92lanqh5p3rp296hsvqe9j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZhIGpZn-a9zCouZPqSq3yrGDsJpesTt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314292970167-il9r0ioke92lanqh5p3rp296hsvqe9j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
